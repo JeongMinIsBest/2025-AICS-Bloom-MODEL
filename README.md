@@ -2,11 +2,13 @@
 
 ## AI Model
 ### Data Processing
-
 - 주식 데이터와 계절 데이터 병합
-- 종목명을 범주형 변수로 처리하여 모델 학습 진행
-  
+- 강수량 데이터의 결측치는 선형 보간법을 사용하여 보완
+
 </br>
+
+### Model Training
+- 데이터 특성 상 
 
 ## Data 🧩
 ### Dataset
