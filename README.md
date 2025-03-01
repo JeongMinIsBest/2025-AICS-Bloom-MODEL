@@ -1,6 +1,10 @@
-# 2025 AICS Bloom AI Stock Model📈
+# 2025 AICS Bloom AI Stock Model 📈
 
 ## AI
+### Dataset
+
+- 주식 데이터
+
 ## Data
 | 데이터명 | 기준 | 출처 | 링크 |
 |:------:|:------:|:------:|:------:|
