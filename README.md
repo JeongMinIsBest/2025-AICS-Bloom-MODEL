@@ -1,5 +1,19 @@
 # 2025 AICS Bloom AI Stock Model 📈
 
+## 🏗 프로젝트 개요
+이 프로젝트는 전북 전주시의 기온 및 강수량 데이터를 기반으로 KOSPI 상위 10개 종목의 주가 예측을 수행하는 실시간 예측 시스템을 구축하는 것을 목표로 합니다.
+이를 위해 XGBoost 모델을 활용하여 학습을 진행하였으며, 실시간 데이터 수집 및 예측 시스템을 구현했습니다.
+
+</br>
+
+## 🛠 주요 기술 및 라이브러리
+- 데이터 수집 : ```FinanceDataReader```, ```기상청 API```
+- 데이터 전처리 및 분석 : ```pandas, numpy```, ```scikit-learn```
+- 머신러닝 모델 : ```XGBoost```
+- 시각화 : ```matplotlib```, ```seaborn```
+
+</br>
+
 ## AI Model
 ### Data Processing
 - 주식 데이터와 계절 데이터 병합
