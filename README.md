@@ -1,4 +1,4 @@
-# 2025-AICS-Bloom 📈
+# 2025 AICS Bloom AI Stock Model📈
 
 ## AI
 ## Data
