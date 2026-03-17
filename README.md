@@ -29,7 +29,6 @@ For this purpose, **an XGBoost model was used for training**, and a **real-time 
 </br>
 
 ### 2️⃣ Feature Engineering
-
 Various features were added to improve stock price prediction performance.
 
 #### 📌 1. Adding Price Change and Volatility Features
