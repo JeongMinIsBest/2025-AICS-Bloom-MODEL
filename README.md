@@ -76,5 +76,36 @@ Various features were added to improve stock price prediction performance.
 | Precipitation | 2024.01 – 2024.12 / Jeonju, Jeollabuk-do | KMA Open Data Portal | https://data.kma.go.kr/stcs/grnd/grndRnList.do?pgmNo=69 |
 | Temperature | 2024.01 – 2024.12 / Jeonju, Jeollabuk-do | KMA Open Data Portal | https://data.kma.go.kr/stcs/grnd/grndTaList.do?pgmNo=70 |
 | Top 10 KOSPI Stocks | 2024.01 – 2024.12 | KRX | FinanceDataReader |
+<br/>
+<br/>
+
+## 📁 Repository Structure
+```
+StockPrediction
+│
+├ main.py
+├ requirements.txt
+├ 0213_xgboost_stock_model.json
+│
+├ Data
+│   ├ Stock
+│   ├ Weather
+│   └ 최종데이터셋.csv
+│
+└ README.md
+```
+</br>
+</br>
+
+## 🚀 How to run the stock prediction model
+Before running the server, add your KMA API key in main.py. ```SERVICE_KEY = "YOUR_API_KEY"```
+```
+git clone <repo>
+cd StockPrediction
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+```
 </br>
 </br>
