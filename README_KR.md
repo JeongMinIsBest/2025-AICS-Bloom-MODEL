@@ -1,11 +1,8 @@
 # 2025 AICS Bloom AI Stock Model 📈
 
-</br>
-
 ## 🏗 프로젝트 개요
 이 프로젝트는 **전북 전주시의 기온 및 강수량 데이터**를 기반으로 **KOSPI 상위 10개 종목의 주가 예측**을 수행하는 **실시간 예측 시스템을 구축**하는 것을 목표로 합니다.
 이를 위해 **XGBoost 모델을 활용**하여 **학습을 진행**하였으며, **실시간 데이터 수집 및 예측 시스템을 구현**했습니다.
-
 </br>
 
 ## 🛠 주요 기술 및 라이브러리
@@ -13,7 +10,6 @@
 - 데이터 전처리 및 분석 : ```pandas, numpy```, ```scikit-learn```
 - 머신러닝 모델 : ```XGBoost```
 - 시각화 : ```matplotlib```, ```seaborn```
-
 </br>
 
 ## 🔍 수행 과정 설명
@@ -28,7 +24,6 @@
 #### 📌 기상 데이터 수집
 - 기상청 API를 활용하여 전라북도 전주시의 기온(°C) 및 강수량(mm) 데이터 수집했습니다.
 - ```pandas```를 활용하여 데이터 전처리 수행 및 날짜 기준으로 주가 데이터와 병합했습니다.
-
 </br>
 
 ### 2️⃣ 특징 엔지니어링
@@ -61,7 +56,6 @@
 
 #### 📌 8. 데이터 정규화 (MinMax Scaling)
 - 모든 특징을 0~1 범위로 정규화하여 모델 학습에 있어 최적화를 목표로 했습니다.
-
 </br>
 
 ### 3️⃣ XGBoost 모델 학습
@@ -69,13 +63,11 @@
 - ```입력 변수``` : 주가 데이터(시가, 고가, 저가, 종가, 거래량) + 기온 + 강수량
 - ```출력 변수``` : Close(종가) 예측값
 - ```MSE(Mean Squared Error)```, ```RMSE(Root Mean Squared Error)```, ```R² Score```를 활용하여 모델 평가를 진행했습니다.
-
 </br>
 
 #### 4️⃣ 실시간 예측 시스템 구축
 - 최신 기온 및 강수량 데이터를 입력하여 실시간 주가를 예측할 수 있도록 했습니다.
 - 예측 결과를 API 또는 서비스와 연동할 수 있도록 설계했습니다.
-
 </br>
 
 ## 🧩 사용한 데이터 내역
@@ -85,5 +77,34 @@
 | 강수량 | 2024.01 - 2024.12 / 전북 전주시 | 기상청 기상자료개방포털 | https://data.kma.go.kr/stcs/grnd/grndRnList.do?pgmNo=69 |
 | 기온 | 2024.01 - 2024.12 / 전북 전주시 | 기상청 기상자료개방포털 |  https://data.kma.go.kr/stcs/grnd/grndTaList.do?pgmNo=70 |
 | KOSPI 상위 10개 종목 | 2024.01 - 2024.12 | KRX | FinanceDataReader |
+</br>
 
+## 📁 레포지터리 구성
+```
+StockPrediction
+│
+├ main.py
+├ requirements.txt
+├ 0213_xgboost_stock_model.json
+│
+├ Data
+│   ├ Stock
+│   ├ Weather
+│   └ 최종데이터셋.csv
+│
+└ README.md
+```
+</br>
+
+## 🚀 주식 예측 모델 실행 방법
+실행 전에 ```main.py``` 속 기상청 API 키 ```SERVICE_KEY = "YOUR_API_KEY"```를 먼저 입력해야 합니다.
+
+```
+git clone <repo>
+cd StockPrediction
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+```
 </br>
