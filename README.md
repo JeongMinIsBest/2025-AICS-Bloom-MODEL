@@ -1,4 +1,4 @@
-# 2025 AICS Bloom AI Stock Model 📈
+# 📈 2025 AICS Bloom AI Stock Model 
 
 ## 🏗 Project Overview
 This project aims to **build a real-time prediction system** that **predicts stock prices of the top 10 KOSPI-listed companies** based on **temperature and precipitation data from Jeonju, Jeollabuk-do**.
