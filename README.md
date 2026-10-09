@@ -3,16 +3,16 @@
 ## 🏗 Project Overview
 This project aims to **build a real-time prediction system** that **predicts stock prices of the top 10 KOSPI-listed companies** based on **temperature and precipitation data from Jeonju, Jeollabuk-do**.
 For this purpose, **an XGBoost model was used for training**, and a **real-time data collection and prediction system** was implemented.
-</br>
-</br>
+<br/>
+<br/>
 
 ## 🛠 Key Technologies and Libraries
 - Data collection: ```FinanceDataReader```, ```Korea Meteorological Administration (KMA) API```
 - Data preprocessing and analysis: ```pandas, numpy```, ```scikit-learn```
 - Machine learning model: ```XGBoost```
 - Visualization: ```matplotlib```, ```seaborn```
-</br>
-</br>
+<br/>
+<br/>
 
 ## 🔍 Process Description
 
@@ -26,7 +26,7 @@ For this purpose, **an XGBoost model was used for training**, and a **real-time 
 #### 📌 Weather Data Collection
 - Temperature (°C) and precipitation (mm) data for Jeonju, Jeollabuk-do were collected using the Korea Meteorological Administration API.
 - Data preprocessing was performed using ```pandas```, and the data were merged with stock price data based on date.
-</br>
+<br/>
 
 ### 2️⃣ Feature Engineering
 Various features were added to improve stock price prediction performance.
@@ -57,18 +57,20 @@ Various features were added to improve stock price prediction performance.
 
 #### 📌 8. Data Normalization (MinMax Scaling)
 - All features were normalized to a 0–1 range to optimize model training.
-</br>
+<br/>
 
 ### 3️⃣ XGBoost Model Training
 - ```Input variables```: Stock price data (Open, High, Low, Close, Volume) + temperature + precipitation
 - ```Output variable```: Predicted Close price
 - Model evaluation was conducted using ```MSE (Mean Squared Error)```, ```RMSE (Root Mean Squared Error)```, and ```R² Score```.
 <br/>
+<br/>
 
 ### 4️⃣ Real-Time Prediction System Implementation
 - Designed to predict stock prices in real time by inputting the latest temperature and precipitation data.
 - Structured to allow integration of prediction results with APIs or services.
-</br>
+<br/>
+<br/>
 
 ## 🧩 Data Sources Used
 | Dataset | Period / Region | Source | Link |
@@ -94,8 +96,8 @@ StockPrediction
 │
 └ README.md
 ```
-</br>
-</br>
+<br/>
+<br/>
 
 ## 🚀 How to run the stock prediction model
 Before running the server, add your KMA API key in main.py. ```SERVICE_KEY = "YOUR_API_KEY"```
@@ -107,5 +109,5 @@ pip install -r requirements.txt
 
 uvicorn main:app --reload
 ```
-</br>
-</br>
+<br/>
+<br/>
