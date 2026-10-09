@@ -63,9 +63,9 @@ Various features were added to improve stock price prediction performance.
 - ```Input variables```: Stock price data (Open, High, Low, Close, Volume) + temperature + precipitation
 - ```Output variable```: Predicted Close price
 - Model evaluation was conducted using ```MSE (Mean Squared Error)```, ```RMSE (Root Mean Squared Error)```, and ```R² Score```.
-</br>
+<br/>
 
-#### 4️⃣ Real-Time Prediction System Implementation
+### 4️⃣ Real-Time Prediction System Implementation
 - Designed to predict stock prices in real time by inputting the latest temperature and precipitation data.
 - Structured to allow integration of prediction results with APIs or services.
 </br>
